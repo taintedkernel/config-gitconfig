@@ -1,0 +1,31 @@
+# Borrowed some settings from Scott Nonnenberg:
+# https://blog.scottnonnenberg.com/better-git-configuration/
+
+[user]
+    email = adechiaro@gmail.com
+    name = Anthony DeChiaro
+
+[alias]
+    stash-all = stash save --include-untracked
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+[push]
+    default = simple
+
+[merge]
+    ff = only
+    conflictstyle = diff3
+
+[status]
+    showUntrackedFiles = all
+
+[transfer]
+    fsckobjects = true
+
+[diff]
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = icdiff --line-numbers $LOCAL $REMOTE
+
