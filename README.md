@@ -1,2 +1,2 @@
 # config-gitconfig
-My .gitconfig
+vcsh repo for .gitconfig
