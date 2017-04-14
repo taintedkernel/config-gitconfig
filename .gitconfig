@@ -28,4 +28,5 @@
     prompt = false
 [difftool "icdiff"]
     cmd = icdiff --line-numbers $LOCAL $REMOTE
-
+[pager]
+    difftool = true
