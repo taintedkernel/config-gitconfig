@@ -12,8 +12,10 @@
 [push]
     default = simple
 
-[merge]
+[pull]
     ff = only
+
+[merge]
     conflictstyle = diff3
 
 [status]
