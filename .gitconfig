@@ -11,6 +11,7 @@
 
 [push]
     default = simple
+    autoSetupRemote = true
 
 [pull]
     ff = only
@@ -33,4 +34,4 @@
 [pager]
     difftool = true
 [init]
-    defaultBranch = master
+    defaultBranch = main
