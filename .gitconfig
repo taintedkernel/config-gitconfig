@@ -35,10 +35,8 @@
     difftool = true
 [init]
     defaultBranch = main
-[safe]
-	directory = /etc
-	directory = /home/adechiaro/mnt/sshfs/pihole-2/terraform
-	directory = /home/adechiaro/mnt/sshfs/pihole-2/ansible/ansible
-	directory = /home/adechiaro/mnt/sshfs/pihole-2/ansible/dotfiles/config-htop
 [rerere]
 	enabled = true
+
+[includeIf "~/.gitconfig.local"]
+    path = ~/.gitconfig.local
